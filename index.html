@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piece Of Cake</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imgs/logo.png">
+
+
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
+    <style>
+        .carousel {
+            background: #2f4357;
+            margin-top: 20px;
+        }
+
+        .carousel-item {
+            text-align: center;
+            min-width: 25%;
+            min-height: 280px;
+            /*Prevent carousel from being distorted if for some reason image doesn't load
+    /* width: 20vw; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <div class="logo">
+                <img src="imgs/logo.jpg">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#" hidden>Home</a></li>
+                <li><a href="#" hidden>About</a></li>
+                <li><a href="#" hidden>Work</a></li>
+                <li><a href="#" hidden>Projects</a></li>
+
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <section class="sec1">
+        <div class="hero">
+            <!--Parent-->
+            <!--Sur la même ligne-->
+            <div class="balloon">
+                <img src="imgs/icons/birthday.png" alt="">
+            </div>
+            <div class="hero_1">
+                <!--Sur la même colonne-->
+                <div style="text-transform: uppercase; color: white; font: weight 700;;  ">un évènement à organiser ?
+                </div>
+                <div style="font-size: 2.5em; color: white; font-weight: 700;">
+                    <div> Nos professionnels
+                    </div>
+                    <div>s'occupent de tout !</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-wrapper" style="background-color: white;">
+            <form method="POST" action="result.php">
+                <h5 style="color:#5A6A5D; font-weight: 600; text-align: center; margin-top: 15px;">Organiser un
+                    évènement</h5>
+
+                <input type="text" class="form-control" id="fname" name="name" placeholder="Nom & Prénom">
+                <input type="email" class="form-control" id="@" name="email" placeholder="Adresse Email">
+
+                <textarea type="text" class="form-control" id="msg" name="msg" placeholder="Message"></textarea>
+
+                <button type="submit" class="btn btn_primary" style="margin-top: 20px;"> Organiser </button>
+            </form>
+        </div>
+
+
+        <!-- <div class="wrapper">
+            <div class="media">
+                <ul class="social-icons">
+                    <li><a href="http://www.facebook.com">
+                        <img src='imgs/icons8-facebook.png' /></a></li>
+                    <li><a href="http://www.twitter.com"><img src='imgs/icons8 twitter entouré.png' /></a></li>
+                    <li><a href="http://www.linkedin.com"><img src='imgs/icons8 linkedin entouré.png' /></a></li>
+                    <li><a href="http://www.pinterest.com"><img src='imgs/icons8 pinterest.png' /></a></li>
+                </ul>
+            </div>
+
+        </div> -->
+
+        <div style="display: none;"></div>
+
+    </section>
+    <section class="sec2" style="background-color: white;">
+        <div class="flex-container">
+
+
+            <div class="wrapper">
+                <div class="text"> Lorem ipsum dolor sit amet consectetur.
+                    <div class="arcus_wrapper">
+                        <div class="arcus">
+
+                            In arcus
+                            <br>
+                            <br>
+                            <div class="arcus_in">
+
+                                Cursus uismod.
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="wrapper-col">
+                    <img src="imgs/icons/calendar.png" alt="calendar">
+                    <div class="text"> <b> Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
+                            consectetur
+                            adipisicing elit. Eum enim quisquam corporis .</b> </div>
+
+                    <a class="text" style="color: #5A6A5D; font-weight: bold;" href="https://www.w3schools.com/"
+                        target="_blank">En savoir +</a>
+
+                </div>
+                <div class="wrapper-col">
+                    <img src="imgs/icons/balloon.png" alt="calendar">
+                    <div class="text"> <b> Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
+                            consectetur
+                            adipisicing elit. Eum enim quisquam corporis .</b> </div>
+
+                    <a class="text" style="color: #5A6A5D; font-weight: bold;" href="https://www.w3schools.com/"
+                        target="_blank">En savoir +</a>
+
+                </div>
+                <div class="wrapper-col">
+                    <img src="imgs/icons/karaoke.png" alt="calendar">
+                    <div class="text"> <b> Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
+                            consectetur
+                            adipisicing elit. Eum enim quisquam corporis .</b> </div>
+
+                    <a class="text" style="color: #5A6A5D; font-weight: bold;" href="https://www.w3schools.com/"
+                        target="_blank">En savoir +</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="sec3">
+        <div class="wrapper">
+            <h4 style="margin-top: 5%;">
+                Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+                volupt. </h4>
+            <div class="child">
+                <div class="text" style="padding: 12px;">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa adipisci !
+                </div>
+
+            </div>
+
+
+        </div>
+        <br>
+
+
+        <div class="carousel" style="transform: none;" data-flickity='{ "imagesLoaded": true }'>
+            <img src="imgs/new_sliders/slider-3.png" />
+            <img src="imgs/new_sliders/slider-4.png" />
+            <img src="imgs/new_sliders/slider-5.png" />
+            <img src="imgs/new_sliders/slider-6.png" />
+            <img src="imgs/new_sliders/slider-7-1.png" />
+            <img src="imgs/new_sliders/slider-7-2.png" />
+            <img src="imgs/new_sliders/slider-7.png" />
+            <img src="imgs/new_sliders/slider-8.png" />
+
+        </div>
+
+
+    </section>
+
+    <section class="sec4">
+        <div class="wrapper">
+            <h3 style="margin-top: 10vw;">
+                Lorem ipsum dolor sit amet. </h3>
+            <div class="child">
+                <div class="text" style="padding: 12px;">
+                    <br><br><br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa adipisci !
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reprehenderit quisquam aperiam vero
+                    assumenda nihil dolore natus nam et quam veniam velit tempore
+                    corporis quasi nemo, laboriosam repellendus obcaecati recusandae!
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+            <div class="box-wrapper">
+                <div class="child-1">
+                    <div class="txt_element" style="padding-bottom:10px ;">
+                        Lorem
+                    </div>
+                    <div class="txt_element big">
+                        <b>nunc</b>
+                        <br><br>
+
+                    </div>
+                    <ul>
+                        <li> - ullamcorper a </li>
+                        <li> - ullamcorper a </li>
+                        <li> - ullamcorper a </li>
+                        <li> - ullamcorper a </li>
+
+                    </ul>
+                    <button class="btn btn_primary sed"> SED</button>
+
+                </div>
+                <div class="child-2">
+                    <div class="txt_element " style="padding-bottom:10px ;">
+                        Lorem
+                    </div>
+
+                    <div class="txt_element big" style="padding-bottom:10px ;">
+                        <b>nunc</b>
+                        <br>
+                        <br>
+                    </div>
+                    <ul>
+                        <li> - ullamcorper a </li>
+                        <li> - ullamcorper a </li>
+                        <li> - ullamcorper a </li>
+                        <li> - ullamcorper a </li>
+                        <li> - ullamcorper a </li>
+                        <li> - ullamcorper a </li>
+
+                    </ul>
+                    <button class="btn btn_primary sed"> SED</button>
+                </div>
+
+                <div class="child-1">
+                    <div class="txt_element ">
+                        Lorem
+                    </div>
+                    <div class="txt_element big">
+                        <b>nunc</b>
+                        <br> <br>
+                    </div>
+                    <ul>
+                        <li> - ullamcorper a </li>
+                        <li> - ullamcorper a </li>
+                        <li> - ullamcorper a </li>
+                        <li> - ullamcorper a </li>
+                    </ul>
+                    <button class="btn btn_primary sed"> SED</button>
+                </div>
+
+
+            </div>
+    </section>
+
+    <section class="sec-hidden">
+        
+    </section>
+    <!-- <section class="sec3">
+        <div class="wrapper">
+            <h4>
+                Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+                volupt. </h4>
+            <div class="child">
+                <div class="text" style="padding: 12px;">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa adipisci !
+                </div>
+
+            </div>
+
+
+        </div>
+        <br>
+    </section> -->
+
+
+
+    <section class="sec2" style="background-color: white;">
+        <div id="outerDiv">
+            <form action="/action_page.php">
+            <div id="wordDiv">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                 <div class="input-container">
+                  <i class="fa fa-envelope icon"></i>
+                  <input class="input-field nws" type="text" placeholder="Adresse email" name="email"
+                  >
+                <button type="submit" class="btn submit" id="nws">Souscrire</button>            
+                </div>          
+              </form>
+        </div>
+        
+    <!-- </section>
+
+    <section class="sec2" style="background-color: white;"> -->
+        <div class="flex-container" id="marg">
+            <div id="wrap_2">
+                <div class="f-child" >
+                    <div id="comp"> <b> Compagnie</b> <br> <br>  </div>
+                    <div id="footer_text">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae deleniti repudian.
+                        Lorem ipsum, dolor . </div>
+                </div>
+            
+                <div class="f-child" >
+                    <div id="comp"> <b> Compagnie</b> <br> <br>  </div>
+                    <div id="footer_text">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae deleniti repudian.
+                        Lorem ipsum, dolor . </div>
+                </div><div class="f-child" >
+                    <div id="comp"> <b> Compagnie</b> <br> <br>  </div>
+                    <div id="footer_text">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae deleniti repudian.
+                        Lorem ipsum, dolor . </div>
+                </div><div class="f-child" >
+                    <div id="comp"> <b> Compagnie</b> <br> <br>  </div>
+                    <div id="footer_text">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae deleniti repudian.
+                        Lorem ipsum, dolor . </div>
+                </div>
+                
+                
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
